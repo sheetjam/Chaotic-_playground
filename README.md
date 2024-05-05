@@ -6,3 +6,14 @@ This is my chaotic playground
 <body><h1>can you see me</h1>
 </body>
 </html>
+<style>
+button{
+  background-color: rgb(213, 0, 0);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 110px;
+}
+</style>
+
+<button>subscribe</button>
