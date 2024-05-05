@@ -5,7 +5,9 @@ This is my chaotic playground
   press me
 </button>
 
-<button><a href="https://www.youtube.com/"target="_blank">link to youtube</a></button>
+<button>
+<a href="https://www.youtube.com/"target="_blank">link to youtube</a>
+</button>
 
 
 <head>Hello there!</head>
