@@ -60,7 +60,7 @@ Here is a picture of a cat to look at.
   <body>
       <img src="cat.1.wp.webp">
       <img src="download.webp"
-      <img src="thumbnails/cars.jpg"
+      <img src="cars.jpg"
   
   </body>
   
