@@ -62,3 +62,18 @@ Here is a picture of a cat to look at.
   </body>
 
   <button class="untest-button">untest</button>
+  <style>
+  .untest-button{
+  background-color: aqua;
+  height: 36px;
+  width: 74px;
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+  color: aliceblue 
+</style>
