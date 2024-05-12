@@ -55,3 +55,8 @@ This is my chaotic playground
 
 <button class="tweet-button">tweet</button>
 
+Here is a picture of a cat to look at. 
+
+  <body>
+      <img src="cat.1.wp.webp">
+  </body>
