@@ -1,7 +1,17 @@
 This is my chaotic playground
 <!DOCTYPE html>
 <style>
-
+.subscribe-button{
+  background-color: rgb(213, 0, 0);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 110px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition:opacity 0.15s;
+  vertical-align: top;
 }
 .join-button{
   background-color: rgb(133, 249, 124);
