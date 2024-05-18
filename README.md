@@ -93,6 +93,7 @@
     <li><a href="books.html">red</a></li>
     <li><a href="child.html">green</a></li>
     <li><a href="parent.html">blue</a></li>
+    <li><a href="potion.html">potion</a></li>
   </ul>
 </p>
 
