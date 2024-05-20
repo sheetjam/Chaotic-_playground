@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <style>
@@ -44,7 +43,7 @@
 <body>
   <div id="header">
     <h1>Sandbox</h1>
-
+      <div>
         <ul>
           <li><a href="">projects</a></li>
           <li><a href="">cool interest</a></li>
