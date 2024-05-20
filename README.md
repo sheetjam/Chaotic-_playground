@@ -26,7 +26,7 @@
     padding: 5px;
   }
   .spider {
-    height: 135px;
+    height: 115px;
     width: 120px;
     border-radius: 7px;
    }
