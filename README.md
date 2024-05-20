@@ -29,7 +29,7 @@
     height: 135px;
     width: 120px;
     border-radius: 7px;
-    margin-top: 30px;
+    margin-top: 15px;
    }
    #content {
     justify-content: center;
