@@ -26,9 +26,10 @@
     padding: 5px;
   }
   .spider {
-    height: 115px;
+    height: 135px;
     width: 120px;
     border-radius: 7px;
+    margin-top: 30px;
    }
    #content {
     justify-content: center;
@@ -43,7 +44,7 @@
 <body>
   <div id="header">
     <h1>Sandbox</h1>
-      <div>
+    <div>
         <ul>
           <li><a href="">projects</a></li>
           <li><a href="">cool interest</a></li>
