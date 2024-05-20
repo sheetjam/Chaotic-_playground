@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <style>
@@ -17,7 +18,7 @@
     width: 200px;
     float: left;
     margin: 10px;
-    height: 150px;
+    height: 170px;
     background-color: #86f8df;
     border-radius: 7px;
   }
@@ -25,14 +26,15 @@
     display: inline;
     padding: 5px;
   }
-  .google {
-    border-radius: 15px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 270px;
-  }
+  .spider {
+    height: 135px;
+    width: 120px;
+    border-radius: 7px;
+   }
+   #content {
+    justify-content: center;
+    text-align: center;
+   }
   </style>
 
 
@@ -42,8 +44,8 @@
 <body>
   <div id="header">
     <h1>Sandbox</h1>
-        <div>
-          <ul>
+
+        <ul>
           <li><a href="">projects</a></li>
           <li><a href="">cool interest</a></li>
           <li><a href="">untest-playground</a></li>
@@ -62,7 +64,7 @@
       <p>interesting things</p>
     </div>
     <div class="article column1">
-      <p>column one</p>
+      <p><img class=spider src="spider.png"></p>
     </div>
     <div class="article column2">
       <p>column two</p>
