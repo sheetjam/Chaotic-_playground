@@ -15,7 +15,7 @@
     background-color: #9bfef6;
     border-radius: 7px;}
     .column1,.column2,.column3,.column4,.column5,.column6 {
-    width: 300px;
+    width: 200px;
     float: left;
     margin: 10px;
     height: 150px;
