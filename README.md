@@ -42,7 +42,7 @@
     <h1>Sandbox</h1>
     <div>
         <ul>
-          <li><a href="page1.html" targe="blank">projects</a></li>
+          <li><a href="page1.html" target="blank">projects</a></li>
           <li><a href="">cool interest</a></li>
           <li><a href="">untest-playground</a></li>
           <li><a href="">gallary</a></li>
