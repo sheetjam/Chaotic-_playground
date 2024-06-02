@@ -27,6 +27,10 @@
     display: inline;
     padding: 5px;
   }
+  .untest-cafe {
+    font-size: 25px;
+    text-align: center;
+  }
   </style>
 
 
@@ -38,7 +42,7 @@
     <h1>Sandbox</h1>
     <div>
         <ul>
-          <li><a href="">projects</a></li>
+          <li><a href="page1.html" targe="blank">projects</a></li>
           <li><a href="">cool interest</a></li>
           <li><a href="">untest-playground</a></li>
           <li><a href="">gallary</a></li>
@@ -56,7 +60,7 @@
       <p>interesting things</p>
     </div>
     <div class="article column1">
-      <p>column one</p>
+      <p class="untest-cafe">Untest.cafe</p>
     </div>
     <div class="article column2">
       <p>column two</p>
