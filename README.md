@@ -170,7 +170,7 @@ footer {
 <header>
     <div class="logo-container">
         <img src="emblem.png" alt="Company Logo" class="logo" />
-        <h1>website v1</h1>
+        <h1>Where your dream home becomes reality</h1>
     </div>
 </header>
 
