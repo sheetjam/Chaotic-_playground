@@ -6,7 +6,7 @@
     <title>Liquid Layout Template</title>
     <link rel="stylesheet" href="style.css" />
 <style>
-  * {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -19,7 +19,6 @@ body {
     background-position: center;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #ffffff;
     color: #333;
 }
 
