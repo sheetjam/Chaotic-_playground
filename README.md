@@ -142,7 +142,7 @@
 
     .listing-card {
       flex: 1 1 20%;
-      max-width: 250px;
+      max-width: 350px;
       max-height: fit-content;
       background: white;
       border-radius: 10px;
