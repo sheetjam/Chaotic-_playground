@@ -1,209 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liquid Layout Template</title>
-    <link rel="stylesheet" href="style.css" />
-<style>
- * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InSight Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ========= Base Styles ========= */
 
-body {
-    background-image: url("tree.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-header, nav, main, footer {
-    padding: 1em;
-}
+    body {
+      background: url("pictures/tree.png") center/cover no-repeat;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
 
-header {
-    background: #ffffff;
-    background: linear-gradient(90deg,rgba(0, 119, 204, 1) 0%, rgba(0, 139, 204, 0.87) 38%, rgba(0, 180, 204, 1) 100%);
-    color: white;
-    padding: 1em;
-}
+    header {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 119, 204, 1) 0%,
+        rgba(0, 139, 204, 0.87) 38%,
+        rgba(0, 180, 204, 1) 100%
+      );
+      color: #fff;
+      padding: .5em;
+    }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-.logo {
-    height: auto;
-    width: 180px; /* Responsive size */
-    max-width: 100%;
-}
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
 
-nav {
-    background: #e0e0e0;
-}
+    .logo {
+      width: 70px;
+      height: auto;
+      max-width: 100%;
+    }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    /* ========= Navigation ========= */
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 0.5em;
-}
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1em;
-}
+    nav {
+      background: #0077cc;
+    }
 
-.content {
-    flex: 3 1 60%;
-    padding: 1em;
-    background: #ffffff;
-    margin-right: 1em;
-}
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1em;
+    }
 
-.sidebar {
-    flex: 1 1 30%;
-    padding: 1em;
-    background: #d9edf7;
-}
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5em;
+      transition: background 0.3s;
+    }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 1em;
-}
-.listing-card {
-    background: white;
-    max-width: 800px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
 
-.listing-card:hover {
-  transform: scale(1.01);
-}
+    /* ========= Main Layout ========= */
 
-.image-gallery {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      padding: 1em;
+    }
 
-.image-gallery .main-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .content {
+      flex: 3 1 60%;
+      background: #fff;
+      padding: 1em;
+      border-radius: 5px;
+    }
 
-.details {
-    padding: 1.5rem;
-}
+    .sidebar {
+      flex: 1 1 30%;
+      background: #d9edf7;
+      padding: 1em;
+      border-radius: 5px;
+    }
 
-.details h2 {
-    margin: 0;
-    font-size: 2rem;
-    color: #2c3e50;
-}
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      margin-top: 1em;
+    }
 
-.location {
-    color: #888;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-}
+    /* ========= Responsive ========= */
 
-.description {
-    margin-bottom: 1.5rem;
-    color: #333;
-}
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+        color: #fff;
+      }
 
-.features {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.5rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
+      nav {
+        display: none;
+      }
 
-.features li {
-    background: #eaf1f8;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 0.95rem;
-}
+      nav.show {
+        display: block;
+      }
 
-.btn {
-    display: inline-block;
-    background: #3498db;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0;
+      }
 
-.btn:hover {
-    background: #2980b9;
-}
+      nav li {
+        width: 100%;
+      }
 
-</style>
+      nav a {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .logo-container {
+        flex: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-    <div class="logo-container">
-        <img src="emblem.png" alt="Company Logo" class="logo" />
-        <h1>Where your dream home becomes reality</h1>
+  <header>
+    <div class="header-top">
+      <div class="hamburger" onclick="toggleNav()">
+        &#9776;
+      </div>
+      <div class="logo-container">
+        <img src="pictures/emblem.png" alt="InSight Services Logo" class="logo" />
+        <h4>Where dream homes become reality</h4>
+      </div>
     </div>
-</header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <nav id="myLinks">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Placeholder</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section class="content">
-            <h2>About us</h2>
-            <p>Thank you for visiting Insight services. We are a privately owned company that specializes
-                in the purchasing and selling of properties. For the last 30 years, we have been serving the
-                people of north east, fl. We are looking forward to helping you in your home buying journey.
-            </p>
-            <p>Text to be added here. This can go as far or even be modified. Placeholder.
-            </p>
-            <p>We are available 7 days a week.
-            Please call or text us at 123-456-7890. Email us at Thisisatest@gmail.com
-            </p>
-        </section>
-        <aside class="sidebar">
-            <h3>sidebar</h3>
-            <p>This is a sidebar with flexible width.</p>
-        </aside>
-    </main>
+  <main>
+    <section class="content">
+      <h2>About Us</h2>
+      <p>
+        Thank you for visiting InSight Services. We are a privately owned company
+        specializing in the purchasing and selling of properties. For the last
+        30 years, we have been serving the people of Northeast Florida. We look
+        forward to helping you in your home-buying journey.
+      </p>
+      <p>
+        Additional text can be added here as needed. This is placeholder
+        content.
+      </p>
+      <p>
+        We are available 7 days a week. Please call or text us at
+        <a href="tel:1234567890">123-456-7890</a> or email us at
+        <a href="mailto:thisisatest@gmail.com">thisisatest@gmail.com</a>.
+      </p>
+    </section>
 
-    <footer>
-        <p>InSight Services inc</p>
-    </footer>
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>This is a sidebar with flexible width.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; InSight Services Inc.</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById("myLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
 </body>
-</html>>
+</html>
