@@ -15,7 +15,7 @@
     }
 
     body {
-      background: url("pictures/tree.png") center/cover no-repeat;
+      background: url("tree.png") center/cover no-repeat;
       font-family: Arial, sans-serif;
       color: #333;
       line-height: 1.6;
@@ -162,7 +162,7 @@
   <header>
 <div class="header-top">
   <div class="logo-container">
-    <img src="pictures/emblem.png" alt="InSight Services Logo" class="logo" />
+    <img src="emblem.png" alt="InSight Services Logo" class="logo" />
     <h4>Where dream homes become reality</h4>
   </div>
   <div class="hamburger" onclick="toggleNav()">
