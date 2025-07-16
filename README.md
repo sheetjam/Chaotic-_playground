@@ -87,7 +87,7 @@
 
     /* ========= Main Layout ========= */
 
-    main {
+    main{
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
@@ -96,9 +96,11 @@
 
     .content {
       flex: 3 1 60%;
-      background: #fff;
+      background: #ffffffcd;
       padding: 1em;
       border-radius: 5px;
+      font-size: 14px;
+      
     }
 
     .sidebar {
@@ -115,7 +117,17 @@
       padding: 1em;
       margin-top: 1em;
     }
-
+            /* ========= listings ========= */
+    .listings-top {
+        font-size: 12px;
+        text-align: center;
+        color: #000000;
+        background-color: #ffffffb9;
+        border-radius: 5px;
+        padding: .25em;
+        flex: 1 1 30%;
+        display: flex;
+        }
     /* ========= Responsive ========= */
 
     @media (max-width: 768px) {
@@ -156,6 +168,7 @@
           order: 1;
       }
     }
+
   </style>
 </head>
 <body>
@@ -199,12 +212,11 @@
         <a href="mailto:thisisatest@gmail.com">thisisatest@gmail.com</a>.
       </p>
     </section>
-
-    <aside class="sidebar">
-      <h3>Sidebar</h3>
-      <p>This is a sidebar with flexible width.</p>
-    </aside>
   </main>
+      <listings class="listings-top">
+        <p>Here are some recently listed homes</p>
+    </listings>
+  
 
   <footer>
     <p>&copy; InSight Services Inc.</p>
