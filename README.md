@@ -268,7 +268,7 @@
     <div class="header-top">
       <div class="logo-container">
         <img src="emblem.png" alt="InSight Services Logo" class="logo" />
-        <h1>InSight Services</h1>
+        <h3>Where your dream home becomes reality</h3>
       </div>
       <div class="hamburger" onclick="toggleNav()">
         &#9776;
