@@ -33,12 +33,11 @@
     }
 
     .header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
     .logo-container {
       display: flex;
@@ -58,6 +57,7 @@
       display: none;
       font-size: 2rem;
       cursor: pointer;
+      color: #fff;
     }
 
     nav {
@@ -87,7 +87,7 @@
 
     /* ========= Main Layout ========= */
 
-    main{
+    main {
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
@@ -99,8 +99,7 @@
       background: #ffffffcd;
       padding: 1em;
       border-radius: 5px;
-      font-size: 14px;
-      
+      font-size: 15px;
     }
 
     .sidebar {
@@ -117,24 +116,114 @@
       padding: 1em;
       margin-top: 1em;
     }
-            /* ========= listings ========= */
+
+    /* ========= Listings ========= */
+
+    .listings-section {
+      padding: 1em;
+    }
+
     .listings-top {
-        font-size: 12px;
-        text-align: center;
-        color: #000000;
-        background-color: #ffffffb9;
-        border-radius: 5px;
-        padding: .25em;
-        flex: 1 1 30%;
-        display: flex;
-        }
+      font-size: 1rem;
+      text-align: center;
+      color: #000;
+      background-color: #ffffffb9;
+      border-radius: 5px;
+      padding: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    .listing-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+    }
+
+    .listing-card {
+      flex: 1 1 20%;
+      max-width: 250px;
+      max-height: fit-content;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .listing-card:hover {
+      transform: scale(1.01);
+    }
+
+    .image-gallery {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .image-gallery .main-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .details {
+      padding: 1rem;
+    }
+
+    .details h2 {
+      margin: 0;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .location {
+      color: #888;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .features li {
+      background: #eaf1f8;
+      padding: 0.2rem .25rem;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+    }
+
     /* ========= Responsive ========= */
 
     @media (max-width: 768px) {
       .hamburger {
         display: block;
-        color: #fff;
-          order: 2;
+        order: 2;
       }
 
       nav {
@@ -165,23 +254,26 @@
 
       .logo-container {
         flex: 1;
-          order: 1;
+        order: 1;
+      }
+
+      .listing-card {
+        flex: 1 1 100%;
       }
     }
-
   </style>
 </head>
 <body>
   <header>
-<div class="header-top">
-  <div class="logo-container">
-    <img src="emblem.png" alt="InSight Services Logo" class="logo" />
-    <h4>Where dream homes become reality</h4>
-  </div>
-  <div class="hamburger" onclick="toggleNav()">
-    &#9776;
-  </div>
-</div>
+    <div class="header-top">
+      <div class="logo-container">
+        <img src="emblem.png" alt="InSight Services Logo" class="logo" />
+        <h1>InSight Services</h1>
+      </div>
+      <div class="hamburger" onclick="toggleNav()">
+        &#9776;
+      </div>
+    </div>
 
     <nav id="myLinks">
       <ul>
@@ -213,10 +305,127 @@
       </p>
     </section>
   </main>
-      <listings class="listings-top">
-        <p>Here are some recently listed homes</p>
-    </listings>
-  
+
+  <section class="listings-section">
+    <p class="listings-top">Here are some recently listed homes</p>
+    <div class="listing-grid">
+      <div class="listing-card">
+        <div class="image-gallery">
+          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+        </div>
+        <div class="details">
+          <h2>$599,000</h2>
+          <p class="location">1234 Elm Street, Springfield, IL</p>
+          <p class="description">Beautiful 4-bedroom family home...</p>
+          <ul class="features">
+            <li>🛏️ 4 Beds</li>
+            <li>🛁 3 Baths</li>
+            <li>📐 2,400 sqft</li>
+            <li>🌳 Large backyard</li>
+            <li>🚗 2-car garage</li>
+          </ul>
+          <a href="#" class="btn">Schedule a Tour</a>
+        </div>
+      </div>
+
+      <div class="listing-card">
+        <div class="image-gallery">
+          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+        </div>
+        <div class="details">
+          <h2>$599,000</h2>
+          <p class="location">1234 Elm Street, Springfield, IL</p>
+          <p class="description">Beautiful 4-bedroom family home...</p>
+          <ul class="features">
+            <li>🛏️ 4 Beds</li>
+            <li>🛁 3 Baths</li>
+            <li>📐 2,400 sqft</li>
+            <li>🌳 Large backyard</li>
+            <li>🚗 2-car garage</li>
+          </ul>
+          <a href="#" class="btn">Schedule a Tour</a>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="image-gallery">
+          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+        </div>
+        <div class="details">
+          <h2>$599,000</h2>
+          <p class="location">1234 Elm Street, Springfield, IL</p>
+          <p class="description">Beautiful 4-bedroom family home...</p>
+          <ul class="features">
+            <li>🛏️ 4 Beds</li>
+            <li>🛁 3 Baths</li>
+            <li>📐 2,400 sqft</li>
+            <li>🌳 Large backyard</li>
+            <li>🚗 2-car garage</li>
+          </ul>
+          <a href="#" class="btn">Schedule a Tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="listings-section">
+    <div class="listing-grid">
+      <div class="listing-card">
+        <div class="image-gallery">
+          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+        </div>
+        <div class="details">
+          <h2>$599,000</h2>
+          <p class="location">1234 Elm Street, Springfield, IL</p>
+          <p class="description">Beautiful 4-bedroom family home...</p>
+          <ul class="features">
+            <li>🛏️ 4 Beds</li>
+            <li>🛁 3 Baths</li>
+            <li>📐 2,400 sqft</li>
+            <li>🌳 Large backyard</li>
+            <li>🚗 2-car garage</li>
+          </ul>
+          <a href="#" class="btn">Schedule a Tour</a>
+        </div>
+      </div>
+
+      <div class="listing-card">
+        <div class="image-gallery">
+          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+        </div>
+        <div class="details">
+          <h2>$599,000</h2>
+          <p class="location">1234 Elm Street, Springfield, IL</p>
+          <p class="description">Beautiful 4-bedroom family home...</p>
+          <ul class="features">
+            <li>🛏️ 4 Beds</li>
+            <li>🛁 3 Baths</li>
+            <li>📐 2,400 sqft</li>
+            <li>🌳 Large backyard</li>
+            <li>🚗 2-car garage</li>
+          </ul>
+          <a href="#" class="btn">Schedule a Tour</a>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="image-gallery">
+          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+        </div>
+        <div class="details">
+          <h2>$599,000</h2>
+          <p class="location">1234 Elm Street, Springfield, IL</p>
+          <p class="description">Beautiful 4-bedroom family home...</p>
+          <ul class="features">
+            <li>🛏️ 4 Beds</li>
+            <li>🛁 3 Baths</li>
+            <li>📐 2,400 sqft</li>
+            <li>🌳 Large backyard</li>
+            <li>🚗 2-car garage</li>
+          </ul>
+          <a href="#" class="btn">Schedule a Tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; InSight Services Inc.</p>
