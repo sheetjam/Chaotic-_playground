@@ -15,7 +15,7 @@
     }
 
     body {
-      background: url("tree.png") center/cover no-repeat;
+      background: url("pictures/tree.png") center/cover no-repeat;
       font-family: Arial, sans-serif;
       color: #333;
       line-height: 1.6;
@@ -33,11 +33,12 @@
     }
 
     .header-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 
     .logo-container {
       display: flex;
@@ -121,6 +122,7 @@
       .hamburger {
         display: block;
         color: #fff;
+          order: 2;
       }
 
       nav {
@@ -151,21 +153,23 @@
 
       .logo-container {
         flex: 1;
+          order: 1;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-top">
-      <div class="hamburger" onclick="toggleNav()">
-        &#9776;
-      </div>
-      <div class="logo-container">
-        <img src="emblem.png" alt="InSight Services Logo" class="logo" />
-        <h4>Where dream homes become reality</h4>
-      </div>
-    </div>
+<div class="header-top">
+  <div class="logo-container">
+    <img src="pictures/emblem.png" alt="InSight Services Logo" class="logo" />
+    <h4>Where dream homes become reality</h4>
+  </div>
+  <div class="hamburger" onclick="toggleNav()">
+    &#9776;
+  </div>
+</div>
+
     <nav id="myLinks">
       <ul>
         <li><a href="#">Home</a></li>
