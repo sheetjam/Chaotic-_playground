@@ -15,7 +15,7 @@
     }
 
     body {
-      background: url("tree.png") center/cover no-repeat;
+      background: url("repeattest.jpg") center/cover repeat;
       font-family: Arial, sans-serif;
       color: #333;
       line-height: 1.6;
