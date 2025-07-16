@@ -142,7 +142,7 @@
 
     .listing-card {
       flex: 1 1 20%;
-      max-width: 350px;
+      max-width: 400px;
       max-height: fit-content;
       background: white;
       border-radius: 10px;
@@ -311,7 +311,7 @@
     <div class="listing-grid">
       <div class="listing-card">
         <div class="image-gallery">
-          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+          <img src="testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
         </div>
         <div class="details">
           <h2>$599,000</h2>
@@ -330,7 +330,7 @@
 
       <div class="listing-card">
         <div class="image-gallery">
-          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+          <img src="testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
         </div>
         <div class="details">
           <h2>$599,000</h2>
@@ -348,7 +348,7 @@
       </div>
       <div class="listing-card">
         <div class="image-gallery">
-          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+          <img src="testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
         </div>
         <div class="details">
           <h2>$599,000</h2>
@@ -371,7 +371,7 @@
     <div class="listing-grid">
       <div class="listing-card">
         <div class="image-gallery">
-          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+          <img src="testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
         </div>
         <div class="details">
           <h2>$599,000</h2>
@@ -390,7 +390,7 @@
 
       <div class="listing-card">
         <div class="image-gallery">
-          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+          <img src="testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
         </div>
         <div class="details">
           <h2>$599,000</h2>
@@ -408,7 +408,7 @@
       </div>
       <div class="listing-card">
         <div class="image-gallery">
-          <img src="pictures/testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
+          <img src="testlisting.jpg" alt="Exterior view of the home at 1234 Elm Street" class="main-image" loading="lazy" />
         </div>
         <div class="details">
           <h2>$599,000</h2>
