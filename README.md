@@ -277,7 +277,7 @@
 
     <nav id="myLinks">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="contact.html">Home</a></li>
         <li><a href="#">Placeholder</a></li>
         <li><a href="#">Locations</a></li>
         <li><a href="#">Contact</a></li>
