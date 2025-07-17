@@ -40,7 +40,7 @@
     }
 
     .logo-container {
-      display: flex;
+      display: flex; 
       align-items: center;
       gap: 1em;
     }
